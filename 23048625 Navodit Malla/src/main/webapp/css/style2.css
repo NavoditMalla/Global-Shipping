@@ -1,0 +1,599 @@
+/* Updated style2.css */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #fefefe;
+    background-color: #222132;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #1a1927;
+    color: #fefefe;
+    padding: 8px 0;
+    font-size: 0.9rem;
+}
+
+.top-nav .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-nav .nav-links li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.top-nav .nav-links a {
+    color: #fefefe;
+    transition: color 0.3s;
+}
+
+.top-nav .nav-links a:hover {
+    color: #f7ac70;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.login-btn, .register-btn {
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #fefefe;
+    border: 1px solid #fefefe;
+}
+
+.login-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.register-btn {
+    background-color: #f7ac70;
+    color: #222132;
+    border: 1px solid #f7ac70;
+}
+
+.register-btn:hover {
+    background-color: #e69c60;
+}
+
+/* Main Header */
+.main-header {
+    background-color: #2a273c;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f7ac70;
+    letter-spacing: -1px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 25px;
+}
+
+.main-nav a {
+    font-weight: bold;
+    color: #fefefe;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-nav a:hover {
+    color: #f7ac70;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, #222132, #f7ac70);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #fefefe;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #f7ac70;
+    color: #222132;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e69c60;
+}
+
+/* Form Section */
+.form-section {
+    padding: 50px 0;
+    background-color: #2a273c;
+}
+
+.simple-form {
+    background-color: #1e1c2a;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.simple-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #f7ac70;
+}
+
+.simple-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #2a273c;
+    color: white;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7ac70;
+    color: #222132;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #e69c60;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #1a1927;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #f7ac70;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #f7ac70;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Welcome Section Card Layout */
+.welcome-section {
+    background: linear-gradient(to right, #222132, #f7ac70);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    background-color: #1e1c2a;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.welcome-left {
+    flex: 1;
+    background: linear-gradient(135deg, #f7ac70, #e69c60);
+    padding: 60px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-left h2 {
+    font-size: 2.2rem;
+    color: #222132;
+    margin-bottom: 20px;
+}
+
+.welcome-left p {
+    font-size: 1.2rem;
+    color: #222132;
+    font-weight: bold;
+}
+
+.welcome-right {
+    flex: 1;
+    background-color: #222132;
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.register-link-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #f7ac70;
+    color: #222132;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.register-link-btn:hover {
+    background-color: #e69c60;
+}
+/* Shipping Section Styles */
+.shipping-section {
+    background-color: #2a273c;
+    padding: 60px 0;
+    color: #fefefe;
+}
+
+.shipping-section h2 {
+    font-size: 2rem;
+    color: #f7ac70;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.shipping-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fefefe;
+}
+
+.shipping-section p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.service-item {
+    flex: 1;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.service-list li:before {
+    content: "•";
+    color: #f7ac70;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.explore-cta {
+    text-align: center;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #f7ac70;
+    color: #222132;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+}
+
+.explore-btn:hover {
+    background-color: #e69c60;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 172, 112, 0.3);
+}
+/* Cargo Section Styles - Complementary Color Theme */
+.cargo-section {
+    background-color: #1e1c2a;
+    padding: 60px 0;
+    color: #fefefe;
+    border-top: 1px solid #3a3848;
+    border-bottom: 1px solid #3a3848;
+}
+
+.cargo-section h2 {
+    font-size: 2rem;
+    color: #f7ac70; /* Different accent color */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cargo-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fefefe;
+}
+
+.cargo-section p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.freight-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.freight-item {
+    flex: 1;
+}
+
+.freight-list {
+    list-style: none;
+}
+
+.freight-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.freight-list li:before {
+    content: "•";
+    color: #6bb9f0; /* Matching accent color */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.forwarding-cta {
+    text-align: center;
+}
+
+.forwarding-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #f7ac70; /* Matching accent color */
+    color: #222132;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+}
+
+.forwarding-btn:hover {
+    background-color: #5aa8df;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(107, 185, 240, 0.3);
+}
+/* Section Images - Refinement */
+.section-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive grid update */
+.services-grid, .freight-grid {
+    flex-wrap: wrap;
+}
+
+.service-image, .freight-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* Admin Dashboard Section */
+.dashboard-section {
+    background-color: #2a273c;
+    padding: 60px 0;
+}
+
+.dashboard-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 40px;
+}
+
+.dashboard-card {
+    background-color: #1e1c2a;
+    flex: 1 1 300px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 300px;
+}
+
+.dashboard-card h2 {
+    font-size: 1.8rem;
+    color: #f7ac70;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.dashboard-card a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #f7ac70;
+    color: #222132;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard-card a:hover {
+    background-color: #e69c60;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(247, 172, 112, 0.4);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+

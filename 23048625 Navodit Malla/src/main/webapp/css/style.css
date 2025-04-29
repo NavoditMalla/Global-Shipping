@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2c2b3d 0%, #f0a36a 100%);
+    background-attachment: fixed;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.left-pane {
+    width: 50%;
+    background-color: #f0a36a;
+}
+
+.left-pane {
+    width: 50%;
+    background: linear-gradient(135deg, #f0a36a, #f9bf88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #2c2b3d;
+    padding: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+.right-pane {
+    width: 50%;
+    background-color: #2c2b3d;
+    padding: 50px;
+    color: white;
+}
+
+.right-pane h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.right-pane label {
+    font-size: 14px;
+}
+
+.right-pane input[type="text"],
+.right-pane input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.right-pane input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-pane input[type="submit"]:hover {
+    background-color: #cfcfcf;
+}
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.register-link {
+    color: #f0a36a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.right-pane form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f0a36a;
+    color: #2c2b3d;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-pane form input[type="submit"]:hover {
+    background-color: #e0935c;
+}
+
+.right-pane {
+    background-color: #2c2c3d; /* Your existing dark style */
+    padding: 40px;
+    border-radius: 0 15px 15px 0;
+    width: 50%;
+    overflow-y: auto; /* 👈 Enables vertical scroll */
+    max-height: 500px; /* 👈 Set this based on your layout height */
+}
+.error-message{
+	color: red;
+	text-align: center;
+	font-weight: bold;
+}
+.success-message{
+	color: seagreen;
+	text-align: center;
+	font-weight: bold;
+}
