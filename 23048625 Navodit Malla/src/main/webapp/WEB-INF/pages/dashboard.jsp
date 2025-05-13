@@ -12,13 +12,13 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <a href="adminDashboard.jsp">Admin Panel</a>
+                <a href="dashboard">Admin Panel</a>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="manageDeliveries.jsp">Manage Deliveries</a></li>
-                    <li><a href="manageShipments.jsp">Manage Shipments</a></li>
-                    <li><a href="trackParcels.jsp">Track Parcels</a></li>
+                    <li><a href="managedelivery">Manage Deliveries</a></li>
+                    <li><a href="manageshipment">Manage Shipments</a></li>
+                    <li><a href="trackparcel">Track Parcels</a></li>
                     <li><a href="logout">Logout</a></li>
                 </ul>
             </nav>
@@ -38,19 +38,19 @@
             <div class="dashboard-card">
                 <h2>Manage Deliveries</h2>
                 <p>Update delivery status, assign drivers, and optimize routes.</p>
-                <a href="manageDeliveries.jsp" class="explore-btn">Go to Deliveries</a>
+                <a href="managedelivery" class="explore-btn">Go to Deliveries</a>
             </div>
 
             <div class="dashboard-card">
                 <h2>Manage Shipments</h2>
                 <p>Create new shipments, update shipment details, and monitor shipments in real-time.</p>
-                <a href="manageShipments.jsp" class="explore-btn">Go to Shipments</a>
+                <a href="manageshipment" class="explore-btn">Go to Shipments</a>
             </div>
 
             <div class="dashboard-card">
                 <h2>Track Parcels</h2>
                 <p>View all parcel tracking updates, shipment statuses, and customer inquiries.</p>
-                <a href="trackParcels.jsp" class="explore-btn">Go to Tracking</a>
+                <a href="trackparcel" class="explore-btn">Go to Tracking</a>
             </div>
         </div>
     </section>
@@ -62,9 +62,9 @@
                 <div class="footer-column">
                     <h3>Admin Tools</h3>
                     <ul>
-                        <li><a href="manageDeliveries.jsp">Deliveries</a></li>
-                        <li><a href="manageShipments.jsp">Shipments</a></li>
-                        <li><a href="trackParcels.jsp">Tracking</a></li>
+                        <li><a href="managedelivery">Deliveries</a></li>
+                        <li><a href="manageshipment">Shipments</a></li>
+                        <li><a href="trackparcel">Tracking</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">

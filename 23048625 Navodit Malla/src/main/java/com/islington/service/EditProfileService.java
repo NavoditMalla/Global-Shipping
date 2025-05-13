@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import com.islington.config.DbConfig;
-import com.islington.model.ProgramModel;
+import com.islington.model.UserModel;
 import com.islington.util.PasswordUtil;
 
 public class EditProfileService {
@@ -20,7 +20,7 @@ public class EditProfileService {
         }
     }
 
-    public Boolean updateUserProfile(ProgramModel programModel) {
+    public Boolean updateUserProfile(UserModel programModel) {
         if (dbConn == null) {
             System.err.println("Database connection is not available");
             return null;

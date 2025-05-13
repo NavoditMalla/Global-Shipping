@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.islington.config.DbConfig;
-import com.islington.model.ProgramModel;
+import com.islington.model.UserModel;
 import com.islington.util.PasswordUtil;
 
 /**
@@ -38,7 +38,7 @@ public class LoginService {
      * @return true if the user credentials are valid, false otherwise; null if a
      *         connection error occurs
      */
-    public Boolean loginUser(ProgramModel programModel) {
+    public Boolean loginUser(UserModel programModel) {
         if (isConnectionError) {
             System.out.println("Connection Error!");
             return null;
@@ -75,7 +75,7 @@ public class LoginService {
      * @return true if the passwords match, false otherwise
      * @throws SQLException if a database access error occurs
      */
-    private boolean validatePassword(ResultSet result, ProgramModel programModel) throws SQLException {
+    private boolean validatePassword(ResultSet result, UserModel programModel) throws SQLException {
         String dbUsername = result.getString("Username");
         String dbPassword = result.getString("Password");
 

@@ -1,0 +1,212 @@
+/* Navbar */
+/* Fix overall page background */
+body {
+    background-color: #222132 !important;
+    color: #fefefe;
+}
+
+/* Make the .container section darker too */
+.container {
+    background-color: #222132;
+    padding: 40px 20px;
+}
+
+/* Form box is already fine, but reinforce */
+.form-box {
+    background-color: #1e1c2a;
+    color: #fefefe;
+}
+
+/* Table background fix */
+.styled-table {
+    background-color: #1e1c2a;
+    border-radius: 12px;
+}
+
+/* Fix table row hover or base colors */
+.styled-table tr {
+    background-color: #1a1927;
+}
+
+/* Header and footer match */
+.hero-section {
+    background: linear-gradient(to right, #2a273c, #f7ac70);
+}
+
+.footer {
+    background-color: #1a1927;
+}
+
+.navbar {
+    background-color: #1a1927;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #f7ac70;
+}
+
+.navbar .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links a {
+    margin-left: 25px;
+    color: #fefefe;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #f7ac70;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #2a273c, #f7ac70);
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+/* Form */
+.form-box {
+    background-color: #1e1c2a;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2a273c;
+    color: white;
+}
+
+.form-box button {
+    background-color: #f7ac70;
+    color: #222132;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #e69c60;
+}
+
+/* Table */
+.styled-table {
+    width: 90%;
+    margin: 0 auto 60px;
+    background-color: #1e1c2a;
+    color: #fff;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.styled-table th, .styled-table td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #2a273c;
+    color: #f7ac70;
+}
+
+.styled-table td button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    background-color: #f7ac70;
+    color: #222132;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.styled-table td button:hover {
+    background-color: #e69c60;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1927;
+    color: #fff;
+    padding: 40px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    color: #f7ac70;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #f7ac70;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #999;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+.form-box select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2a273c;
+    color: white;
+}
+

@@ -50,9 +50,7 @@
     <nav class="top-nav">
         <div class="container">
             <ul class="nav-links">
-                <li><a href="#">Personal</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Enterprise</a></li>
+                
                 <li>
                     <a href="profile" style="text-decoration: none;">
     				<div class="profile-area">
@@ -75,10 +73,10 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Tracking</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="shippingrequest">Shipping</a></li>
+                    <li><a href="usertrackparcel">Tracking</a></li>
+                    <li><a href="contactus">Support</a></li>
+                    <li><a href="logout">Logout</a></li>
                 </ul>
             </nav>
         </div>
@@ -89,7 +87,32 @@
         <div class="container">
             <h1>Welcome to Global Shipping</h1>
             <p>Fast, reliable shipping services worldwide</p>
-            <a href="register" class="cta-button">Get Started</a>
+            <a href="customer" class="cta-button">Get Started</a>
         </div>
     </section>
-    <!-- The rest of your page content remains the same -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Shipping Services</h3>
+                    <ul>
+                        <li><a href="#">Domestic Shipping</a></li>
+                        <li><a href="#">International Shipping</a></li>
+                        <li><a href="#">Same Day Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contactus">Contact Us</a></li>
+                        <li><a href="aboutus">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Global Shipping. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>

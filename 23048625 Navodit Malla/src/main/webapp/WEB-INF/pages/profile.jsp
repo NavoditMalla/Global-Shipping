@@ -97,9 +97,9 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="homepage.jsp">Home</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Tracking</a></li>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="shippingrequest">Shipping</a></li>
+                    <li><a href="usertrackparcel">Tracking</a></li>
                     <li><a href="#">Support</a></li>
                 </ul>
             </nav>
@@ -162,7 +162,7 @@
                     <ul>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Shipping Rates</a></li>
+                        
                     </ul>
                 </div>
             </div>

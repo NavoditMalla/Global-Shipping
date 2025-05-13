@@ -12,9 +12,6 @@
     <nav class="top-nav">
         <div class="container">
             <ul class="nav-links">
-                <li><a href="#">Personal</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Enterprise</a></li>
                 <li class="auth-buttons">
                     <a href="login" class="login-btn">Login</a>
                     <a href="register" class="register-btn">Register</a>
@@ -27,16 +24,8 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <a href="homepage.jsp">Global Shipping</a>
+                <a href="home">Global Shipping</a>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Tracking</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
@@ -74,7 +63,7 @@
 
                 
                 <div class="explore-cta">
-                    <a href="#" class="explore-btn">Explore Global Express</a>
+                    <a href="home" class="explore-btn">Explore Global Express</a>
                 </div>
             </div>
         </div>
@@ -107,7 +96,7 @@
 
                 
                 <div class="forwarding-cta">
-                    <a href="#" class="forwarding-btn">Explore Global Forwarding</a>
+                    <a href="home" class="forwarding-btn">Explore Global Forwarding</a>
                 </div>
             </div>
         </div>
@@ -135,17 +124,16 @@
                 <div class="footer-column">
                     <h3>Shipping Services</h3>
                     <ul>
-                        <li><a href="#">Domestic Shipping</a></li>
-                        <li><a href="#">International Shipping</a></li>
-                        <li><a href="#">Same Day Delivery</a></li>
+                        <li>Domestic Shipping</li>
+                        <li>International Shipping</li>
+                        <li>Same Day Delivery</li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Shipping Rates</a></li>
+                        <li><a href="contactus">Contact Us</a></li>
+                        <li><a href="home">FAQs</a></li>
                     </ul>
                 </div>
             </div>

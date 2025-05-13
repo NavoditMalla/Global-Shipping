@@ -1,6 +1,6 @@
 package com.islington.controller;
 
-import com.islington.model.ProgramModel;
+import com.islington.model.UserModel;
 import com.islington.service.EditProfileService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -38,7 +38,7 @@ public class ProfileController extends HttpServlet {
             String phone = request.getParameter("phone");
             String password = request.getParameter("password");
 
-            ProgramModel updatedUser = new ProgramModel();
+            UserModel updatedUser = new UserModel();
             updatedUser.setUsername(username);
             updatedUser.setEmail(email);
             updatedUser.setPhone_Number(phone);

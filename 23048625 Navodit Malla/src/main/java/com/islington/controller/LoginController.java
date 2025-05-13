@@ -1,6 +1,6 @@
 package com.islington.controller;
 
-import com.islington.model.ProgramModel;
+import com.islington.model.UserModel;
 import com.islington.service.LoginService;
 import com.islington.util.CookieUtil;
 import com.islington.util.SessionUtil;
@@ -45,7 +45,7 @@ public class LoginController extends HttpServlet {
             return;
         }
 
-        ProgramModel programModel = new ProgramModel();
+        UserModel programModel = new UserModel();
         programModel.setUsername(username);
         programModel.setPassword(password);
 

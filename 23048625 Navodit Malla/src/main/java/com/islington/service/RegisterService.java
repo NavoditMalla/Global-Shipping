@@ -3,10 +3,11 @@ import java.sql.Connection;
 import com.islington.util.PasswordUtil;
 import java.sql.Date;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.islington.config.DbConfig;
-import com.islington.model.ProgramModel;
+import com.islington.model.UserModel;
 
 public class RegisterService {
 	private Connection dbConn;
@@ -18,7 +19,7 @@ public class RegisterService {
 			ex.printStackTrace();
 		}
 	}
-	public Boolean addUser(ProgramModel programModel) {
+	public Boolean addUser(UserModel programModel) {
 	    if (dbConn == null) {
 	        System.err.println("Database connection is not available");
 	        return null;
@@ -51,5 +52,19 @@ public class RegisterService {
 	    }
 	    
 	}
+	public boolean isUsernameTaken(String username) {
+	    String query = "SELECT COUNT(*) FROM user WHERE Username = ?";
+	    try (PreparedStatement stmt = dbConn.prepareStatement(query)) {
+	        stmt.setString(1, username);
+	        ResultSet rs = stmt.executeQuery();
+	        if (rs.next()) {
+	            return rs.getInt(1) > 0;
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return false;
+	}
+
 	
 }
